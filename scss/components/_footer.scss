@@ -1,0 +1,20 @@
+footer {
+  background: linear-gradient(to right, $color-ss-dark, $color-ss-dark-hover);
+  padding-bottom: 70px;
+
+  a {
+    color: $color-ss-white;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: smaller;
+  }
+}
+
+.footer-img {
+  img {
+    width: 0.75em;
+    border-radius: 100%;
+  }
+}

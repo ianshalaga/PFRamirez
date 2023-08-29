@@ -1,0 +1,275 @@
+/* This CSS is designed with the design pattern mobile first */
+@font-face {
+  font-family: "Gontserrat medium";
+  src: url(../assets/fonts/Gontserrat-Medium.ttf);
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  color: #20bf55;
+  font-family: "Gontserrat medium";
+}
+
+.fit-content {
+  width: fit-content;
+  height: fit-content;
+}
+
+.min-content {
+  width: fit-content;
+}
+
+.min-width {
+  width: 50%;
+}
+
+.max-width {
+  width: 100%;
+}
+.max-width li {
+  width: 100%;
+}
+
+.max-height {
+  height: 100%;
+}
+.max-height li {
+  height: 100%;
+}
+
+.border-green, .border-tb-green {
+  border: 1px solid #20bf55;
+}
+
+.border-tb-green {
+  border-left: none;
+  border-right: none;
+}
+
+.page-title {
+  color: bisque;
+}
+
+header {
+  background: linear-gradient(to right, #242730, #434859);
+}
+
+.header-height {
+  height: 70px;
+}
+
+.header-img img {
+  width: 25px;
+  transition: 0.5s;
+}
+.header-img img:hover {
+  transform: scale(1.01);
+}
+
+.header-logo h1 {
+  transition: 0.5s;
+  font-size: medium;
+}
+.header-logo img {
+  width: 30px;
+  transition: 0.5s;
+}
+.header-logo img:hover {
+  transform: scale(1.03);
+}
+
+nav {
+  background-color: #242730;
+}
+
+.nav-img img {
+  transition: 0.5s;
+}
+.nav-img img:hover {
+  background-color: #20bf55;
+  padding: 2px;
+  transform: scale(1.01);
+}
+
+.nav-icon {
+  width: 45px;
+  border-radius: 100%;
+}
+
+.nav-text {
+  display: none;
+}
+
+.nav-height {
+  height: 70px;
+}
+
+.nav-border li {
+  border-left: 0;
+  border-right: 0;
+}
+
+.nav-position {
+  bottom: 0;
+}
+
+footer {
+  background: linear-gradient(to right, #242730, #434859);
+  padding-bottom: 70px;
+}
+footer a {
+  color: bisque;
+  text-decoration: none;
+}
+footer p {
+  font-size: smaller;
+}
+
+.footer-img img {
+  width: 0.75em;
+  border-radius: 100%;
+}
+
+body {
+  background-color: #a52422;
+  background-image: url(../assets/images/background.webp);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+main {
+  padding-top: 70px;
+  min-height: 80vh;
+}
+
+section {
+  width: 90%;
+  background-color: #242730;
+}
+
+a {
+  color: #20bf55;
+  text-decoration: none;
+}
+
+img {
+  width: 45px;
+  object-fit: contain;
+}
+
+strong {
+  color: bisque;
+}
+
+.main-img img {
+  border-radius: 100%;
+}
+
+.section-hover section {
+  transition: 0.5s;
+}
+.section-hover section:hover {
+  background-color: #434859;
+}
+
+/* @@@@ SMALL TABLET */
+@media screen and (min-width: 576px) {
+  /* Header */
+  .header-img img {
+    width: 35px;
+    transition: 0.5s;
+  }
+  .header-img img:hover {
+    width: 40px;
+  }
+  .header-logo h1 {
+    font-size: 2em;
+  }
+  .header-logo img {
+    width: 45px;
+  }
+  .header-logo img:hover {
+    width: 50px;
+  }
+  /* Nav */
+  .nav-icon {
+    display: None;
+  }
+  .nav-text {
+    display: flex;
+    margin: 0;
+    font-size: small;
+    transition: 0.5s;
+  }
+  .nav-text:hover {
+    color: white;
+  }
+  .nav-hover li:hover {
+    background-color: #434859;
+  }
+  .nav-border li {
+    border-left: 1px solid #20bf55;
+    border-right: 1px solid #20bf55;
+  }
+  /* Main */
+  .main-img img {
+    width: 50%;
+  }
+}
+/* @@@@ LARGE TABLET */
+@media screen and (min-width: 768px) {
+  /* Nav */
+  .nav-text {
+    font-size: medium;
+  }
+}
+/* @@@@ DESKTOP */
+@media screen and (min-width: 992px) {
+  /* Tags */
+  footer {
+    padding-bottom: 0;
+  }
+  /* Global */
+  .max-width li {
+    width: fit-content;
+  }
+  /* Nav */
+  nav {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .nav-position {
+    top: 0;
+    width: 50%;
+    left: 37%;
+  }
+  .nav-text {
+    font-size: small;
+  }
+  .nav-border li {
+    border: none;
+  }
+  .nav-hover li:hover {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  /* Main */
+  .main-img img {
+    width: 85%;
+  }
+  .cards section {
+    height: 35em;
+  }
+  main {
+    min-height: 91.5vh;
+  }
+  .min-content {
+    width: min-content;
+  }
+}
+
+/*# sourceMappingURL=styles-scss.css.map */

@@ -1,0 +1,40 @@
+nav {
+  background-color: $color-ss-dark;
+}
+
+.nav-img {
+  img {
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $color-ss-green;
+      // width: 54px;
+      padding: 2px;
+      transform: scale(1.01);
+    }
+  }
+}
+
+.nav-icon {
+  width: 45px;
+  border-radius: 100%;
+}
+
+.nav-text {
+  display: none;
+}
+
+.nav-height {
+  height: 70px;
+}
+
+.nav-border {
+  li {
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+.nav-position {
+  bottom: 0;
+}

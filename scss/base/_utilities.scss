@@ -1,0 +1,42 @@
+.fit-content {
+  @include adjust-content(fit-content, fit-content);
+}
+
+.min-content {
+  width: fit-content;
+}
+
+.min-width {
+  @include min-width;
+}
+
+.max-width {
+  @include max-width;
+
+  li {
+    @include max-width;
+  }
+}
+
+.max-height {
+  @include max-height;
+
+  li {
+    @include max-height;
+  }
+}
+
+.border-green {
+  border: 1px solid $color-ss-green;
+}
+
+.border-tb-green {
+  // Border top bottom green
+  @extend .border-green;
+  border-left: none;
+  border-right: none;
+}
+
+.page-title {
+  color: $color-ss-white;
+}
